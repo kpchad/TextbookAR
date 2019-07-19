@@ -8,12 +8,23 @@ ScriptsOnlyBuild:
     - GoogleARCore.Examples.AugmentedImage.AugmentedImageExampleController
     - GoogleARCore.Examples.AugmentedImage.AugmentedImageVisualizer
     - UniHumanoid.HumanPoseClip
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_Dropdown
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.SpatialTracking.dll:
     - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
@@ -22,7 +33,14 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.AspectRatioFitter
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Toggle
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity:
     - Class: 1
@@ -43,26 +61,38 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 89
-      Script: {instanceID: 0}
-    - Class: 90
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 111
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9394}
     - Class: 114
       Script: {instanceID: 9528}
     - Class: 114
       Script: {instanceID: 9594}
     - Class: 114
+      Script: {instanceID: 9626}
+    - Class: 114
+      Script: {instanceID: 9634}
+    - Class: 114
       Script: {instanceID: 9648}
+    - Class: 114
+      Script: {instanceID: 9652}
+    - Class: 114
+      Script: {instanceID: 9654}
+    - Class: 114
+      Script: {instanceID: 9666}
     - Class: 114
       Script: {instanceID: 9750}
     - Class: 114
@@ -74,22 +104,36 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10094}
     - Class: 114
+      Script: {instanceID: 10190}
+    - Class: 114
       Script: {instanceID: 10200}
     - Class: 114
       Script: {instanceID: 10332}
     - Class: 114
       Script: {instanceID: 10544}
     - Class: 114
+      Script: {instanceID: 10812}
+    - Class: 114
+      Script: {instanceID: 10826}
+    - Class: 114
       Script: {instanceID: 10840}
     - Class: 114
       Script: {instanceID: 10940}
     - Class: 114
       Script: {instanceID: 11038}
+    - Class: 114
+      Script: {instanceID: 11052}
+    - Class: 114
+      Script: {instanceID: 11396}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 137
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
       Script: {instanceID: 0}
     - Class: 222
       Script: {instanceID: 0}
@@ -192,7 +236,7 @@ ScriptsOnlyBuild:
     className: ActivationTrack
   - hash:
       serializedVersion: 2
-      Hash: 16967ff3c4e32bf02748605393f74519
+      Hash: e19b43c6b4e1fea3649875c1c6d99f0c
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.AugmentedImage
     className: AugmentedImageExampleController
@@ -1153,4 +1197,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity
-  playerPath: D:/Unity/StravAR/App/AugmentedImage.apk
+  playerPath: D:/Unity/TextbookAR/App/AugmentedScience.apk

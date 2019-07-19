@@ -50,6 +50,11 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public GameObject FitToScanOverlay;
 
+        /// <summary>
+        /// The options dropdown for showing different animations.
+        /// </summary>
+        public GameObject AnimationDropdown;
+
         private Dictionary<int, AugmentedImageVisualizer> m_Visualizers
             = new Dictionary<int, AugmentedImageVisualizer>();
 
@@ -98,11 +103,13 @@ namespace GoogleARCore.Examples.AugmentedImage
                 if (visualizer.Image.TrackingState == TrackingState.Tracking)
                 {
                     FitToScanOverlay.SetActive(false);
+                    AnimationDropdown.SetActive(true);
                     return;
                 }
             }
 
             FitToScanOverlay.SetActive(true);
+            AnimationDropdown.SetActive(false);
         }
     }
 }
