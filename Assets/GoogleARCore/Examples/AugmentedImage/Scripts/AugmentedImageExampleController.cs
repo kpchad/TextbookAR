@@ -103,13 +103,16 @@ namespace GoogleARCore.Examples.AugmentedImage
                 if (visualizer.Image.TrackingState == TrackingState.Tracking)
                 {
                     FitToScanOverlay.SetActive(false);
-                    AnimationDropdown.SetActive(true);
+                    if (visualizer.Image.Name == "Earth") {
+
+                    } 
+                    //AnimationDropdown.SetActive(true);
                     return;
                 }
             }
 
             FitToScanOverlay.SetActive(true);
-            AnimationDropdown.SetActive(false);
+            //AnimationDropdown.SetActive(false);
         }
     }
 }

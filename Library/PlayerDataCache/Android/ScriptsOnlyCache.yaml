@@ -18,10 +18,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -39,8 +37,6 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Toggle
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
     Assets/GoogleARCore/Examples/AugmentedImage/Scenes/AugmentedImage.unity:
     - Class: 1
@@ -76,55 +72,55 @@ ScriptsOnlyBuild:
     - Class: 111
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9394}
+      Script: {instanceID: 9416}
     - Class: 114
-      Script: {instanceID: 9528}
+      Script: {instanceID: 9548}
     - Class: 114
-      Script: {instanceID: 9594}
+      Script: {instanceID: 9614}
     - Class: 114
-      Script: {instanceID: 9626}
-    - Class: 114
-      Script: {instanceID: 9634}
-    - Class: 114
-      Script: {instanceID: 9648}
-    - Class: 114
-      Script: {instanceID: 9652}
+      Script: {instanceID: 9646}
     - Class: 114
       Script: {instanceID: 9654}
     - Class: 114
-      Script: {instanceID: 9666}
+      Script: {instanceID: 9668}
     - Class: 114
-      Script: {instanceID: 9750}
+      Script: {instanceID: 9672}
     - Class: 114
-      Script: {instanceID: 9756}
+      Script: {instanceID: 9674}
     - Class: 114
-      Script: {instanceID: 9762}
+      Script: {instanceID: 9686}
     - Class: 114
-      Script: {instanceID: 9806}
+      Script: {instanceID: 9770}
     - Class: 114
-      Script: {instanceID: 10094}
+      Script: {instanceID: 9776}
     - Class: 114
-      Script: {instanceID: 10190}
+      Script: {instanceID: 9782}
     - Class: 114
-      Script: {instanceID: 10200}
+      Script: {instanceID: 9826}
     - Class: 114
-      Script: {instanceID: 10332}
+      Script: {instanceID: 10114}
     - Class: 114
-      Script: {instanceID: 10544}
+      Script: {instanceID: 10210}
     - Class: 114
-      Script: {instanceID: 10812}
+      Script: {instanceID: 10220}
     - Class: 114
-      Script: {instanceID: 10826}
+      Script: {instanceID: 10352}
     - Class: 114
-      Script: {instanceID: 10840}
+      Script: {instanceID: 10564}
     - Class: 114
-      Script: {instanceID: 10940}
+      Script: {instanceID: 10832}
     - Class: 114
-      Script: {instanceID: 11038}
+      Script: {instanceID: 10846}
     - Class: 114
-      Script: {instanceID: 11052}
+      Script: {instanceID: 10860}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 10960}
+    - Class: 114
+      Script: {instanceID: 11058}
+    - Class: 114
+      Script: {instanceID: 11072}
+    - Class: 114
+      Script: {instanceID: 11416}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -216,12 +212,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
     namespaceName: UnityEngine.XR.LegacyInputHelpers
     className: ArmModel
-  - hash:
-      serializedVersion: 2
-      Hash: 60e8caf18427abcbf84a442e06f46ebb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: AnimationBehaviour
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -776,7 +766,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAsset
   - hash:
       serializedVersion: 2
-      Hash: b6337c40e664256917540c23828614b4
+      Hash: 46f07899bd2966f10a35a7ff2e822043
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.AugmentedImage
     className: AugmentedImageVisualizer

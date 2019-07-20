@@ -37,25 +37,13 @@ namespace GoogleARCore.Examples.AugmentedImage
         /// </summary>
         public AugmentedImage Image;
 
-        /// <summary>
-        /// A model for the lower left corner of the frame to place when an image is detected.
-        /// </summary>
-        public GameObject FrameLowerLeft;
+        public GameObject TestAsset;
 
-        /// <summary>
-        /// A model for the lower right corner of the frame to place when an image is detected.
-        /// </summary>
-        public GameObject FrameLowerRight;
+        public GameObject TransformAsset;
 
-        /// <summary>
-        /// A model for the upper left corner of the frame to place when an image is detected.
-        /// </summary>
-        public GameObject FrameUpperLeft;
+        public GameObject DivergentAsset;
 
-        /// <summary>
-        /// A model for the upper right corner of the frame to place when an image is detected.
-        /// </summary>
-        public GameObject FrameUpperRight;
+        public GameObject ReverseAsset;
 
         /// <summary>
         /// The Unity Update method.
@@ -64,28 +52,45 @@ namespace GoogleARCore.Examples.AugmentedImage
         {
             if (Image == null || Image.TrackingState != TrackingState.Tracking)
             {
-                FrameLowerLeft.SetActive(false);
-                FrameLowerRight.SetActive(false);
-                FrameUpperLeft.SetActive(false);
-                FrameUpperRight.SetActive(false);
+                TestAsset.SetActive(false);
+                TransformAsset.SetActive(false);
+                DivergentAsset.SetActive(false);
+                ReverseAsset.SetActive(false);
                 return;
             }
 
-            float halfWidth = Image.ExtentX / 2;
-            float halfHeight = Image.ExtentZ / 2;
-            FrameLowerLeft.transform.localPosition =
-                (0 * Vector3.left) + (0 * Vector3.back); //(halfWidth * Vector3.left) + (halfHeight * Vector3.back);
-            FrameLowerRight.transform.localPosition =
-                (halfWidth * Vector3.right) + (halfHeight * Vector3.back);
-            FrameUpperLeft.transform.localPosition =
-                (halfWidth * Vector3.left) + (halfHeight * Vector3.forward);
-            FrameUpperRight.transform.localPosition =
-                (halfWidth * Vector3.right) + (halfHeight * Vector3.forward);
+            if (Image.Name == "Earth")
+            {
+                //float halfWidth = Image.ExtentX / 2;
+                //float halfHeight = Image.ExtentZ / 2;
+                TestAsset.transform.localPosition =
+                    (0 * Vector3.left) + (0 * Vector3.back); //(halfWidth * Vector3.left) + (halfHeight * Vector3.back);
+                TestAsset.SetActive(true);
+            }
 
-            FrameLowerLeft.SetActive(true);
-            FrameLowerRight.SetActive(true);
-            FrameUpperLeft.SetActive(true);
-            FrameUpperRight.SetActive(true);
+            if (Image.Name == "Transform")
+            {
+                TransformAsset.transform.localPosition =
+                    (0 * Vector3.left) + (0 * Vector3.back);
+                TransformAsset.SetActive(true);
+            }
+
+            if (Image.Name == "Divergent")
+            {
+                DivergentAsset.transform.localPosition =
+                    (0 * Vector3.left) + (0 * Vector3.back);
+                DivergentAsset.SetActive(true);
+            }
+
+            if (Image.Name == "Reverse")
+            {
+                ReverseAsset.transform.localPosition =
+                    (0 * Vector3.left) + (0 * Vector3.back);
+                ReverseAsset.SetActive(true);
+            }
+
+
+            //TestAsset.SetActive(true);
         }
     }
 }
