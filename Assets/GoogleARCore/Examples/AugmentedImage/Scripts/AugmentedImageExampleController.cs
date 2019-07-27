@@ -106,13 +106,39 @@ namespace GoogleARCore.Examples.AugmentedImage
                     if (visualizer.Image.Name == "Earth") {
 
                     } 
-                    //AnimationDropdown.SetActive(true);
                     return;
                 }
             }
 
             FitToScanOverlay.SetActive(true);
-            //AnimationDropdown.SetActive(false);
+
+            //detect gem taps
+            //RaycastHit Hit;
+            if (Physics.Raycast(transform.position, transform.forward, 2))
+            {
+                Ray raycast = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                RaycastHit raycastHit;
+                if (Physics.Raycast(raycast, out raycastHit))
+                {
+                    Debug.Log("Something Hit");
+
+                    if (raycastHit.collider.CompareTag("DivergentGem"))
+                    {
+                        raycastHit.collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+
+                    if (raycastHit.collider.CompareTag("SubductingGem"))
+                    {
+                        raycastHit.collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+
+                    if (raycastHit.collider.CompareTag("TransformGem"))
+                    {
+                        raycastHit.collider.gameObject.transform.GetChild(0).gameObject.SetActive(true);
+                    }
+
+                }
+            }
         }
     }
 }
